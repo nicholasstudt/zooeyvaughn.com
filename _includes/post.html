@@ -1,0 +1,15 @@
+<div class="blog_entry">
+
+  <h2 class="topic"><a href="{{ post.url }}">{{ post.title }}</a>
+	<span class="date">{{ post.date | date: "%d %B %Y" }}</span>
+  </h2>
+
+  <div class="content">
+	{{ post.content }}
+    <div class="byline"></div>
+  </div>
+
+  <div class="comment_summary">
+    <a href="{{ post.url }}">§</a>
+  </div>
+</div>

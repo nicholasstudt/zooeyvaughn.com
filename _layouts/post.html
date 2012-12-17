@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="blog_entry">
+  <h2 class="topic"><a href="{{ page.url }}">{{ page.title }}</a>
+	<span class="date">{{ page.date | date: "%d %B %Y" }}</span>
+  </h2>
+
+  <div class="content">
+	{{ content }}  
+    <div class="byline"></div>
+    <div class="tags">
+		Tags: 
+		
+		{% for tag in page.tags %}
+			<a href="/archive/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}
+		{% endfor %}
+	</div>
+  </div>
+  <div class="comments"></div> 
+</div>
+

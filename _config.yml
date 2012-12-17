@@ -1,0 +1,11 @@
+#permalink: /:categories/:year-:month-:day/:title
+permalink: /blog/:year-:month-:day/:title
+
+title: Zooey Vaughn
+production_url: http://zooeyvaughn.com
+
+author : 
+ name : Nihcolas Studt
+ email : nicholas@nicholasstudt.com
+
+exclude: README.md Rakefile
